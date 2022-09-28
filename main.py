@@ -80,6 +80,7 @@ def tiktok_dl(client, message):
     directory = str(round(time.time()))
     filename = str(int(time.time()))+'.mp4'
     size = int(requests.head(r).headers['content-length'])
+    size = 91
     total_size = "{:.2f}".format(int(size) / 1048576)
     try:
         os.mkdir(directory)
